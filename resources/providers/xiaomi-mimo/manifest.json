@@ -1,0 +1,29 @@
+{
+  "apiVersion": 1,
+  "id": "xiaomi-mimo",
+  "name": "小米 Mimo V2.5",
+  "version": "1.0.0",
+  "entry": "provider.bundle.js",
+  "moduleType": "module",
+  "capabilities": ["chat"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "password",
+        "title": "API Key"
+      },
+      "model": {
+        "type": "string",
+        "title": "模型名称",
+        "default": "mimo-v2.5"
+      },
+      "baseUrl": {
+        "type": "string",
+        "title": "Base URL",
+        "default": "https://api.xiaomimimo.com/v1"
+      }
+    },
+    "required": ["apiKey"]
+  }
+}
